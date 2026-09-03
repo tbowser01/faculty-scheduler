@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Build outputs
+build/
+dist/
+*.spec
+schedule_app.zip
+
+# Runtime/user state - never commit active scheduling work
+app_state*.json
+exports/
+shared_schedules/
+
+# Presets are user-specific and stored outside the app folder on normal runs
+data/schedule_presets.json
+schedule_presets.json
+
+# Internal institutional source data - keep local, never publish
+# Includes Daily Numbers, official schedule templates, FQF workbooks,
+# Department Chair assignments, and the active FQF pointer.
+data/*.xlsx
+data/active_fqf.json
+
+# Visual captures may expose internal course/faculty information
+docs/assets/*.png
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.tmp
+~$*.xlsx
